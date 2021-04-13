@@ -24,7 +24,7 @@
       <td>{{$db->stok}}</td>
       <td><ul>
           <li><a href="update"><button>update</button></a></li>
-          <li><a href="delete"><button>delete</button></a></li>
+          <li><a href="delete/{{$db->id}}"><button>delete</button></a></li>
           </ul>
         </td>
     </tr>

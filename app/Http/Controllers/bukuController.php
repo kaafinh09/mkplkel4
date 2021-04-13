@@ -21,5 +21,12 @@ class bukuController extends Controller
     {
         return view('create');
     }
+    public function destroy($id)
+    {
+        
+            $delete = buku::destroy($id); 
+
+            return redirect("/welcome");
+    }
     //
 }
