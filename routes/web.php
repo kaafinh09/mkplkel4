@@ -20,3 +20,4 @@ Route::get('/', [bukuController::class, 'root']);
 Route::get('/welcome', [bukuController::class, 'show' ]);
 Route::get('/create', [bukuController::class, 'create' ]);
 Route::get('/delete/{id}', [bukuController::class, 'destroy' ]);
+Route::post('/add', [bukuController::class, 'add' ]);

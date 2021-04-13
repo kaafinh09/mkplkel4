@@ -28,5 +28,23 @@ class bukuController extends Controller
 
             return redirect("/welcome");
     }
+
+    public function add(Request $req)
+    {
+        
+
+            $add = new buku;
+            $add->judul=$req->judul;
+            $add->pengarang=$req->pengarang;
+            $add->tahun=$req->tahun;
+            $add->penerbit=$req->penerbit;
+            $add->stok=$req->stock;
+            $add->save();
+
+            return redirect("/welcome");
+    }
+
+
+
     //
 }
