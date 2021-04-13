@@ -12,6 +12,7 @@
         <th>Tahun terbit</th>
         <th>Penerbit</th>
         <th>Stok tersedia</th>
+        <th>Action</th>
     </tr>
     <?php $__currentLoopData = $db_all; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $db): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
     
@@ -21,8 +22,15 @@
       <td><?php echo e($db->tahun); ?></td>
       <td><?php echo e($db->penerbit); ?></td>
       <td><?php echo e($db->stok); ?></td>
+      <td><ul>
+          <li><a href=""><button>update</button></a></li>
+          <li><a href=""><button>delete</button></a></li>
+          </ul></td>
     </tr>
     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 </table>
+
+<a href="create"><button>buat baru</button></a>
+
 </body>
 </html><?php /**PATH D:\learnLaravel\tugasmkpl\resources\views/welcome.blade.php ENDPATH**/ ?>

@@ -18,3 +18,4 @@ use App\Http\Controllers\bukuController;
 
 Route::get('/', [bukuController::class, 'root']);
 Route::get('/welcome', [bukuController::class, 'show' ]);
+Route::get('/create', [bukuController::class, 'create' ]);

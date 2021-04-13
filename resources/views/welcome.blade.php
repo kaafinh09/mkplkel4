@@ -12,6 +12,7 @@
         <th>Tahun terbit</th>
         <th>Penerbit</th>
         <th>Stok tersedia</th>
+        <th>Action</th>
     </tr>
     @foreach($db_all as $db)
     
@@ -21,8 +22,16 @@
       <td>{{$db->tahun}}</td>
       <td>{{$db->penerbit}}</td>
       <td>{{$db->stok}}</td>
+      <td><ul>
+          <li><a href="update"><button>update</button></a></li>
+          <li><a href="delete"><button>delete</button></a></li>
+          </ul>
+        </td>
     </tr>
     @endforeach
 </table>
+
+<a href="create"><button>buat baru</button></a>
+
 </body>
 </html>

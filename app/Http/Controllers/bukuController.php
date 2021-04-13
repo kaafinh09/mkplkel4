@@ -16,5 +16,10 @@ class bukuController extends Controller
         $db_all = buku::all();
         return view('welcome',compact("db_all"));
     }
+
+    public function create()
+    {
+        return view('create');
+    }
     //
 }
