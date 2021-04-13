@@ -43,7 +43,10 @@ class bukuController extends Controller
 
             return redirect("/welcome");
     }
-
+    public function detail($id)
+    {$db = buku::where('id',$id)->first(); 
+            return view('update',compact("db"));
+}
 
 
     //
