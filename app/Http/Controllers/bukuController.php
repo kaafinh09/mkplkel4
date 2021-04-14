@@ -43,6 +43,23 @@ class bukuController extends Controller
 
             return redirect("/welcome");
     }
+
+    public function update(Request $req)
+    {
+        
+            $update = buku::find($req->id);
+            $update->judul=$req->judul;
+            $update->pengarang=$req->pengarang;
+            $update->tahun=$req->tahun;
+            $update->penerbit=$req->penerbit;
+            $update->stok=$req->stock;
+            $update->save();
+
+            return redirect("/welcome");
+    }
+
+
+
     public function detail($id)
     {$db = buku::where('id',$id)->first(); 
             return view('update',compact("db"));

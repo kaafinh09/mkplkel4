@@ -21,4 +21,5 @@ Route::get('/welcome', [bukuController::class, 'show' ]);
 Route::get('/create', [bukuController::class, 'create' ]);
 Route::get('/delete/{id}', [bukuController::class, 'destroy' ]);
 Route::post('/add', [bukuController::class, 'add' ]);
+Route::post('/update', [bukuController::class, 'update' ]);
 Route::get('/detail/{id}', [bukuController::class, 'detail' ]);
