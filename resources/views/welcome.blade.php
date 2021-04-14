@@ -23,8 +23,8 @@
       <td>{{$db->penerbit}}</td>
       <td>{{$db->stok}}</td>
       <td><ul>
-          <li><a href="detail/{{$db->id}}"><button>update</button></a></li>
-          <li><a href="delete/{{$db->id}}"><button>delete</button></a></li>
+          <li><a href="/detail/{{$db->id}}"><button>update</button></a></li>
+          <li><a href="/delete/{{$db->id}}"><button>delete</button></a></li>
           </ul>
         </td>
     </tr>

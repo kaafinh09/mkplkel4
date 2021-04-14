@@ -23,9 +23,10 @@
       <td><?php echo e($db->penerbit); ?></td>
       <td><?php echo e($db->stok); ?></td>
       <td><ul>
-          <li><a href=""><button>update</button></a></li>
-          <li><a href=""><button>delete</button></a></li>
-          </ul></td>
+          <li><a href="/detail/<?php echo e($db->id); ?>"><button>update</button></a></li>
+          <li><a href="/delete/<?php echo e($db->id); ?>"><button>delete</button></a></li>
+          </ul>
+        </td>
     </tr>
     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 </table>
