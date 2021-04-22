@@ -52,7 +52,6 @@ class bukuController extends Controller
             $update->pengarang=$req->pengarang;
             $update->tahun=$req->tahun;
             $update->penerbit=$req->penerbit;
-            $update->stok=$req->stock;
             $update->save();
 
             return redirect("/welcome");
@@ -71,6 +70,15 @@ public function stock($id)
         return view('stock',compact("db"));
     }
 
+    public function edit(Request $req)
+    {
+        
+            $edit = buku::find($req->id);
+            
+            $edit->stok=$req->stock;
+            $edit->save();
+            return redirect("/welcome");
+    }
 
     
 }
