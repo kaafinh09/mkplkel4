@@ -39,6 +39,7 @@
       <td>{{$db->penerbit}}</td>
       <td>{{$db->stok}}</td>
       <td>
+          <a href="stock/{{$db->id}}"><button class="btn btn-secondary">Edit Stock</button></a>
           <a href="detail/{{$db->id}}"><button class="btn btn-secondary">Update</button></a>
           <a href="delete/{{$db->id}}"><button class="btn btn-danger">Delete</button></a>
           

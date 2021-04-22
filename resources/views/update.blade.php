@@ -41,11 +41,7 @@
       <input type="text" class="form-control" id="exampleInputPassword1" name="penerbit" value="{{$db->penerbit}}">
     </div>
 
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Stock</label>
-      <input type="number" class="form-control" id="exampleInputPassword1" name="stock" value="{{$db->stok}}">
-    </div>
-
+    
     <button type="submit" class="btn btn-primary">Submit</button>
   
     @csrf

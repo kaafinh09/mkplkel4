@@ -23,3 +23,5 @@ Route::get('/delete/{id}', [bukuController::class, 'destroy' ]);
 Route::post('/add', [bukuController::class, 'add' ]);
 Route::post('/update', [bukuController::class, 'update' ]);
 Route::get('/detail/{id}', [bukuController::class, 'detail' ]);
+Route::get('/stock/{id}', [bukuController::class, 'stock' ]);
+Route::post('/edit', [bukuController::class, 'edit' ]);

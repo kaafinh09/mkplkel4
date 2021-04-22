@@ -65,6 +65,12 @@ class bukuController extends Controller
             return view('update',compact("db"));
 }
 
+public function stock($id)
+    {
+        $db = buku::where('id',$id)->first(); 
+        return view('stock',compact("db"));
+    }
 
-    //
+
+    
 }
